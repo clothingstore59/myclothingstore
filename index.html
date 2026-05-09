@@ -1,18 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>My Clothing Brand</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial;
+      background:#0f0f0f;
+      color:white;
+    }
+
+    header{
+      background:black;
+      padding:20px;
+      text-align:center;
+    }
+
+    h1{
+      margin:0;
+      font-size:28px;
+    }
+
+    .banner{
+      text-align:center;
+      padding:40px 20px;
+      background:#1a1a1a;
+    }
+
+    .products{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+      padding:30px;
+    }
+
+    .card{
+      background:#1f1f1f;
+      padding:20px;
+      width:200px;
+      border-radius:10px;
+      text-align:center;
+    }
+
+    .card button{
+      margin-top:10px;
+      padding:10px;
+      border:none;
+      background:white;
+      color:black;
+      cursor:pointer;
+      width:100%;
+    }
+
+    footer{
+      text-align:center;
+      padding:20px;
+      background:black;
+      margin-top:20px;
+    }
+  </style>
 </head>
 
-<body style="font-family:Arial;background:black;color:white;text-align:center;padding:50px;">
+<body>
 
-  <h1>Welcome To My Brand</h1>
+<header>
+  <h1>MY CLOTHING BRAND</h1>
+</header>
 
-  <p>Trendy Streetwear Collection</p>
+<div class="banner">
+  <h2>Premium Streetwear Collection</h2>
+  <p>Trendy • Stylish • Affordable</p>
+</div>
 
-  <button style="padding:10px 20px;border:none;background:white;color:black;">
-    Shop Now
-  </button>
+<div class="products">
+
+  <div class="card">
+    <h3>T-Shirt</h3>
+    <p>₹499</p>
+    <a href="https://wa.me/91XXXXXXXXXX">
+      <button>Buy Now</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>Hoodie</h3>
+    <p>₹999</p>
+    <a href="https://wa.me/91XXXXXXXXXX">
+      <button>Buy Now</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <h3>Oversized Tee</h3>
+    <p>₹699</p>
+    <a href="https://wa.me/91XXXXXXXXXX">
+      <button>Buy Now</button>
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 My Clothing Brand</p>
+</footer>
 
 </body>
 </html>
