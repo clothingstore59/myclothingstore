@@ -2,58 +2,73 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My Clothing Brand</title>
+  <title>Stylish Hub</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body{
       margin:0;
       font-family:Arial;
-      background:#0f0f0f;
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
       color:white;
     }
 
     header{
+      text-align:center;
+      padding:25px;
       background:black;
-      padding:20px;
-      text-align:center;
+      font-size:24px;
+      font-weight:bold;
+      letter-spacing:2px;
     }
 
-    h1{
-      margin:0;
-      font-size:28px;
-    }
-
-    .banner{
-      text-align:center;
-      padding:40px 20px;
-      background:#1a1a1a;
-    }
-
-    .products{
+    .container{
       display:flex;
-      flex-wrap:wrap;
       justify-content:center;
-      gap:20px;
+      flex-wrap:wrap;
       padding:30px;
+      gap:20px;
     }
 
     .card{
       background:#1f1f1f;
-      padding:20px;
-      width:200px;
-      border-radius:10px;
+      width:250px;
+      border-radius:12px;
+      padding:15px;
       text-align:center;
+      box-shadow:0 0 10px rgba(255,255,255,0.1);
+      transition:0.3s;
     }
 
-    .card button{
-      margin-top:10px;
-      padding:10px;
-      border:none;
+    .card:hover{
+      transform:scale(1.05);
+    }
+
+    .card img{
+      width:100%;
+      border-radius:10px;
+    }
+
+    .price{
+      font-size:18px;
+      margin:10px 0;
+      color:#00ffcc;
+    }
+
+    .btn{
       background:white;
       color:black;
-      cursor:pointer;
+      padding:10px;
+      border:none;
       width:100%;
+      cursor:pointer;
+      font-weight:bold;
+      border-radius:5px;
+    }
+
+    .btn:hover{
+      background:#00ffcc;
+      color:black;
     }
 
     footer{
@@ -61,6 +76,12 @@
       padding:20px;
       background:black;
       margin-top:20px;
+      font-size:14px;
+    }
+
+    .contact{
+      color:#00ffcc;
+      font-weight:bold;
     }
   </style>
 </head>
@@ -68,45 +89,29 @@
 <body>
 
 <header>
-  <h1>MY CLOTHING BRAND</h1>
+  STYLISH HUB
 </header>
 
-<div class="banner">
-  <h2>Premium Streetwear Collection</h2>
-  <p>Trendy • Stylish • Affordable</p>
-</div>
+<div class="container">
 
-<div class="products">
-
+  <!-- Shirt Product -->
   <div class="card">
-    <h3>T-Shirt</h3>
-    <p>₹499</p>
-    <a href="https://wa.me/91XXXXXXXXXX">
-      <button>Buy Now</button>
-    </a>
-  </div>
+    <img src="https://images.unsplash.com/photo-1520975922284-9f6b3a2b0f08" alt="Shirt">
+    <h3>Premium Shirt</h3>
+    <div class="price">₹499</div>
 
-  <div class="card">
-    <h3>Hoodie</h3>
-    <p>₹999</p>
-    <a href="https://wa.me/91XXXXXXXXXX">
-      <button>Buy Now</button>
-    </a>
-  </div>
-
-  <div class="card">
-    <h3>Oversized Tee</h3>
-    <p>₹699</p>
-    <a href="https://wa.me/91XXXXXXXXXX">
-      <button>Buy Now</button>
+    <a href="https://wa.me/919671141537">
+      <button class="btn">Buy Now</button>
     </a>
   </div>
 
 </div>
 
 <footer>
-  <p>© 2026 My Clothing Brand</p>
+  Contact: <span class="contact">9671141537</span> <br>
+  © 2026 Stylish Hub | All Rights Reserved
 </footer>
 
 </body>
 </html>
+
